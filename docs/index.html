@@ -12,6 +12,13 @@
             #map {
                 height: 400px;
             }
+
+            #mypopover {
+                width: 400px;
+                height: 150px;
+                margin: 0;
+                padding: 1em;
+            }
         </style>
     </head>
     <body>
@@ -38,6 +45,18 @@
                              </div>
                             <div class="column">
                                 <h2>Popover</h2>
+
+                                <p>This is an HTML-only version of a popover: <br/>
+                                    <button class="button" popovertarget="mypopover">Toggle the popover</button>
+                                </p>
+                                    <div id="mypopover" popover>This is the Pop Over content</div>
+
+                                <p>
+                                This is a JS-driven popover:<kbd>?</kbd> <br/>
+                                </p>
+                                <div id ="js-popover" class="notification is-primary" popover>
+                                    This popover is activated by JavaScript
+                                </div>
 
                              </div>
                         </div>
