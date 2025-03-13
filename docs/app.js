@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     (reason) => {
                         console.error("Unable to set cookie: " + reason);
                         }
-                )
+                );
 
 });
