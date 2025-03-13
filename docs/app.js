@@ -44,4 +44,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 }
             );  
 
+            const popoverElement = document.getElementById('js-popover');
+            document.addEventListener('keydown', (event) => {
+                if(event.key === '?') {
+                    popoverElement.showPopover();
+                    setTimeout(() => {
+                        popoverElement.hidePopover();
+                    }, 1000);
+                        
+                }
+            });
 });
